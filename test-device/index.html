@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test connect</title>
+    <style>
+        input {
+            padding: 5px;
+            border-radius: 3px;
+            border: solid 1px #695e5e;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div style="background-color: #cccc; padding: 20px; border-radius: 5px;">
+            <div style="font-size: 1.3em; margin-bottom: 20px;">
+                <span id="title"></span>
+            </div>
+            <div style="margin-bottom: 20px;" id="content">
+                <div style="margin: 10px 0">
+                    <span>Wifi1</span>
+                    <span style="padding: 3px; background-color: green; border-radius: 50%;">2</span>
+                    <input type="text" name="password" placeholder="password" id="wifi-0"/>
+                    <input type="submit" name="submit" value="OK" class="wifi-submit" data-id="wifi-0" data-name="wifi1"/>
+                </div>
+                <div style="margin: 10px 0">
+                    <span>Wifi2</span>
+                    <input type="text" name="password" placeholder="password" id="wifi-1" />
+                    <input type="submit" name="submit" value="OK" class="wifi-submit" data-id="wifi-1" data-name="wifi2">
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="padding: 10px; background-color: green; color: white; font-weight: 900; cursor: pointer; user-select: none;" id="reset">
+                    <span>Đặt lại</span>
+                </div>
+                <div style="padding: 10px; background-color: green; color: white; font-weight: 900; cursor: pointer; user-select: none;" id="button">
+                    <span>Tiếp tục</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
